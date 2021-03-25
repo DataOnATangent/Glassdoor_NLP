@@ -49,11 +49,11 @@ When looking a what the most popular word is 'helpfu' which might speak to what 
 
 When looking at unique words, we can see that there is not much overlap between the reviews rated one, three, and five. This should help the models better distinguish between rating catagories.
 
-<p align="center"> <img width="550" height="600" src="/images/venn.png" alt="venn_chart"></p>
+<p align="center"> <img src="/images/venn.png" alt="venn_chart"></p>
 
 Notably there was also a distinction in word count among rating groups. It seems the worse a company the more the employee had to see about it on average.
 
-<p align="center"><img width="500" height="350" src="/images/avg_word_rating.png" alt="avg_word_chart"></p> 
+<p align="center"><img src="/images/avg_word_rating.png" alt="avg_word_chart"></p> 
 
 ## Conclusion and Next Steps
 
