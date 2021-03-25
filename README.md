@@ -3,13 +3,13 @@
 <p><img src="/images/businessbanner.webp" alt="Header"></p>
 
 # Using Reviews to Predict Company Ratings
-Authors: [Jiji Craynock](https://github.com/DataOnATangent)
+Author: [Jiji Craynock](https://github.com/DataOnATangent)
 
 <p align="center"><img width="360" height="300" src="/images/gdlogo.png" alt="glasdoor_logo"></p>
 
 
 ## Overview 
-The process of finding a job is quite the undertaking with many factors to consider. Among the most important is deciding which companies to apply to in the first place. Ratings from current and former employees can play a key role in whether or not a candidate chooses to apply. However, these ratings come into question when you realize that often they can be incongruent with the written reviews left. In this project I attempt to close the gap using a translation of qualitative reviews into a quantitative metric that, when combined with machine learning can predict the review score currently available through sites like glassdoor. This will allow candidates and employees to be able to trust the simple ratings to a greater degree as they will be more reflective of the reviewer's true impression of the company. This may also help companies better understand what their trouble areas are since they maybe more nuanced than what the ratings currently indicate.
+The process of finding a job is quite the undertaking with many factors to consider. Among the most important is deciding which companies to apply to in the first place. Ratings from current and former employees can play a key role in whether or not a candidate chooses to apply. However, these ratings come into question when you realize they often can be incongruent with the written reviews. In this project I attempt to close the gap using a translation of qualitative reviews into a quantitative metric that, when combined with machine learning can predict the review score currently available through sites like glassdoor. This will allow candidates and employees to be able to trust the simple ratings to a greater degree as they will be more reflective of the reviewer's true impression of the company. This may also help companies better understand what their trouble areas are since they may be more nuanced than what the ratings currently indicate.
 
 ## Approach
 
@@ -17,10 +17,11 @@ The process of finding a job is quite the undertaking with many factors to consi
 
 1. **Data Aquisition:** Using a glassdoor webscraper developed by Matthew Chatham (sourced below), I scraped 14k+ reviews from 150 companies of various industries and ratings from the glassdoor site.
 
-2. **Preprocessing & Exploratory Data Analysis:** My data contains to groups of features the text columns and non text columns. These were handled seperately in two different notebooks. 
+2. **Preprocessing & Exploratory Data Analysis:** My data contains two groups of features, the text columns and non text columns. These were handled seperately in two different notebooks. 
     
-    2a.The non text data was cleaned, recatagorized, and visualized in order to better understand some general characteristics about the reviewing such as the distribution of location, opnion of CEO, and outlook. 
-    2b. The text columns were cleaned, and explored by rating to understand the make up of the text itself thru features like sentiment, average word count, and rating distribution. 
+    2a.The non text data was cleaned, recatagorized, and visualized in order to better understand some general characteristics about the reviewing such as the distribution of location, opinion of CEO, and outlook. 
+    
+    2b. The text columns were cleaned, and explored by rating to understand the make up of the text itself through features like sentiment, average word count, and rating distribution. 
 
 3. **Processing NLP:** Having a clean dataframe and having explored all the features, the next step was to prepare the text for modeling through NLP. This involved steps like removing stop words, removing punctuation, stemming, and vectorizing.
 
@@ -57,7 +58,7 @@ Notably there was also a distinction in word count among rating groups. It seems
 
 ## Conclusion and Next Steps
 
-In the end my best model was XGBoost with 59% accuracy. This indicates it was able to accurately classify reviews 59% percent of the time. This indicates that machine learning could be a better way to score company reviews and this the overall company rating versus relying on a self reported score. For my next steps I will try to improve on my two best models using grid search to see if I can improve accuracy scores. I also hop to eventually look at deep learning techniques which I feel are more likely to perform better with this kind of data in general.
+In the end my best model was XGBoost with 59% accuracy. This indicates it was able to accurately classify reviews 59% percent of the time. This indicates that machine learning could be a better way to score company reviews and this the overall company rating versus relying on a self reported score. For my next steps I will try to improve on my two best models using grid search to see if I can improve accuracy scores. I also hope to eventually look at deep learning techniques which I feel are more likely to perform better with this kind of data in general.
 
 
 ## Sources
