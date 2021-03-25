@@ -5,13 +5,11 @@
 # Using Reviews to Predict Company Ratings
 Authors: [Jiji Craynock](https://github.com/DataOnATangent)
 
-<p align="center"><img width="460" height="400" src="/images/gdlogo.png" alt="glasdoor_logo"></p>
+<p align="center"><img width="360" height="300" src="/images/gdlogo.png" alt="glasdoor_logo"></p>
 
 
 ## Overview 
 The process of finding a job is quite the undertaking with many factors to consider. Among the most important is deciding which companies to apply to in the first place. Ratings from current and former employees can play a key role in whether or not a candidate chooses to apply. However, these ratings come into question when you realize that often they can be incongruent with the written reviews left. In this project I attempt to close the gap using a translation of qualitative reviews into a quantitative metric that, when combined with machine learning can predict the review score currently available through sites like glassdoor. This will allow candidates and employees to be able to trust the simple ratings to a greater degree as they will be more reflective of the reviewer's true impression of the company. This may also help companies better understand what their trouble areas are since they maybe more nuanced than what the ratings currently indicate.
-
-<p align="center"><img width="260" height="200" src="/images/gd_review.png" alt="review_image"></p>
 
 ## Approach
 
@@ -41,26 +39,26 @@ The process of finding a job is quite the undertaking with many factors to consi
 
 During the preprocessing stage it became immediately clear that the data had quite a bit of class imbalance among ratings. This imbalance was was also seen thruout the various categorical features.
 
-<p align="center"><img width="400" height="300" src="/images/rating_dist_donut.png" alt="donut_chart"></p>
+<p align="center"><img width="600" height="300" src="/images/rating_dist_donut.png" alt="donut_chart"></p>
 
 
 When looking a what the most popular word is 'helpfu' which might speak to what people are looking for in their work environment. 
 
 <p align="center">
-    <img width="600" height="400" src="/images/word_cloud_all.png" alt="word_cloud">
+    <img width="800" height="400" src="/images/word_cloud_all.png" alt="word_cloud">
 </p>
 
 When looking at unique words, we can see that there is not much overlap between the reviews rated one, three, and five. This should help the models better distinguish between rating catagories.
 
 <p align="center">
-    <img width="500" height="400" src="/images/venn.png" alt="venn_chart">
+    <img width="400" height="500" src="/images/venn.png" alt="venn_chart">
 </p>
 
 
 Notably there was also a distinction in word count among rating groups. It seems the worse a company the more the employee had to see about it on average.
 
  
-<p align="center"><img width="500" height="400" src="/images/avg_word_rating.png" alt="avg_word_chart"></p> 
+<p align="center"><img width="400" height="400" src="/images/avg_word_rating.png" alt="avg_word_chart"></p> 
 
 
 
