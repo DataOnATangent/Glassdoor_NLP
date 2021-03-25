@@ -44,7 +44,7 @@ During the preprocessing stage it became immediately clear that the data had qui
 When looking a what the most popular word is 'helpfu' which might speak to what people are looking for in their work environment. 
 
 <p align="center">
-    <img width="800" height="300" src="/images/word_cloud_all.png" alt="word_cloud">
+    <img src="/images/word_cloud_all.png" alt="word_cloud">
 </p>
 
 When looking at unique words, we can see that there is not much overlap between the reviews rated one, three, and five. This should help the models better distinguish between rating catagories.
