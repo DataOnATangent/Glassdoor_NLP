@@ -53,7 +53,7 @@ When looking at unique words, we can see that there is not much overlap between 
 
 Notably there was also a distinction in word count among rating groups. It seems the worse a company the more the employee had to see about it on average.
 
-<p align="center"><img src="/images/avg_word_rating.png" alt="avg_word_chart"></p> 
+<p align="center"><img width="400" height="250" src="/images/avg_word_rating.png" alt="avg_word_chart"></p> 
 
 ## Conclusion and Next Steps
 
