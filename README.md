@@ -58,12 +58,12 @@ Notably there was also a distinction in word count among rating groups. It seems
 
 ## Conclusion and Next Steps
 
-In the end my best model was XGBoost with 59% accuracy. This indicates it was able to accurately classify reviews 59% percent of the time. This indicates that machine learning could be a better way to score company reviews and this the overall company rating versus relying on a self reported score. For my next steps I will try to improve on my two best models using grid search to see if I can improve accuracy scores. I also hope to eventually look at deep learning techniques which I feel are more likely to perform better with this kind of data in general.
+In the end my best model was XGBoost with 59.06% accuracy. This indicates it was able to accurately classify reviews 59% percent of the time and provides support for the idea that machine learning could be a better way to score companies versus relying on a self reported score. in future iterations of this project I hope to increase my sample of lower rated reviews and re attempt these models as well as proceed to deep learning models.
 
 
 ## Sources
 
-Alll data was webscraped from Glassdoor.com. The webscraper used to acquire the data was originally built by [Matthew Chatham](https://github.com/MatthewChatham/glassdoor-review-scraper). The scraper is currently a bit out of date and was altered for the purpose of my project.
+Alll data was webscraped from [Glassdoor.com](https://glassdoor.com). The webscraper used to acquire the data was originally built by [Matthew Chatham](https://github.com/MatthewChatham/glassdoor-review-scraper). The scraper is currently a bit out of date and was altered for the purpose of my project.
 
 ## Repository Structure
     
