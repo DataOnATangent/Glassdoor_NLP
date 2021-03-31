@@ -40,7 +40,7 @@ The process of finding a job is quite the undertaking with many factors to consi
 
 During the preprocessing stage it became immediately clear that the data had quite a bit of class imbalance among ratings. This imbalance was was also seen thruout the various categorical features.
 
-<p align="center"><img src="/images/rating_dist_donut.png" alt="donut_chart"></p>
+<p align="center"><img src="/images/rd_donut.png" alt="donut_chart"></p>
 
 When looking a what the most popular word is 'helpfu' which might speak to what people are looking for in their work environment. 
 
@@ -50,11 +50,11 @@ When looking a what the most popular word is 'helpfu' which might speak to what 
 
 When looking at unique words, we can see that there is not much overlap between the reviews rated one, three, and five. This should help the models better distinguish between rating catagories.
 
-<p align="center"> <img src="/images/venn.png" alt="venn_chart"></p>
+<p align="center"> <img src="/images/vennu.png" alt="venn_chart"></p>
 
 Notably there was also a distinction in word count among rating groups. It seems the worse a company the more the employee had to see about it on average.
 
-<p align="center"><img width="400" height="250" src="/images/avg_word_rating.png" alt="avg_word_chart"></p> 
+<p align="center"><img width="400" height="250" src="/images/aw_rating.png" alt="avg_word_chart"></p> 
 
 ## Conclusion and Next Steps
 
