@@ -40,7 +40,7 @@ The process of finding a job is quite the undertaking with many factors to consi
 
 During the preprocessing stage it became immediately clear that the data had quite a bit of class imbalance among ratings. This imbalance was was also seen thruout the various categorical features.
 
-<p align="center"><img width="400" height="250" src="/images/rd_donut.png" alt="donut_chart"></p>
+<p align="center"><img width="400" height="350" src="/images/rd_donut.png" alt="donut_chart"></p>
 
 When looking a what the most popular word is 'helpfu' which might speak to what people are looking for in their work environment. 
 
