@@ -9,9 +9,9 @@ Author: [Jiji Craynock](https://github.com/DataOnATangent)
 
 
 ## Overview 
-The process of finding a job is quite the undertaking with many factors to consider. Among the most important is deciding which companies to apply to in the first place. Ratings from current and former employees can play a key role in whether or not a candidate chooses to apply. However, these ratings come into question when you realize they often can be incongruent with the written reviews. In this project I attempt to close the gap using a translation of qualitative reviews into a quantitative metric that, when combined with machine learning can predict the review score currently available through sites like glassdoor. This will allow candidates and employees to be able to trust the simple ratings to a greater degree as they will be more reflective of the reviewer's true impression of the company. This may also help companies better understand what their trouble areas are since they may be more nuanced than what the ratings currently indicate.
+The process of finding a job is quite an undertaking with many factors to consider. Among the most important is deciding which companies to apply to in the first place. Ratings from current and former employees can play a key role in whether or not a candidate chooses to apply. However, these ratings come into question when you realize they often can be incongruent with the written reviews. In this project, I attempt to close the gap using a translation of qualitative reviews into a quantitative metric that, when combined with machine learning can predict the review score currently available through sites like glassdoor. This will allow candidates and employees to be able to trust the simple ratings to a greater degree as they will be more reflective of the reviewer's true impression of the company. This may also help companies better understand what their trouble areas are since they may be more nuanced than what the ratings currently indicate.
 
-## Approach
+## Approach 
 
 ### Project Roadmap:
 
@@ -38,27 +38,39 @@ The process of finding a job is quite the undertaking with many factors to consi
 
 ## Findings
 
-During the preprocessing stage it became immediately clear that the data had quite a bit of class imbalance among ratings. This imbalance was was also seen thruout the various categorical features.
+During the preprocessing stage it became immediately clear that the data had quite a bit of class imbalance among ratings. Out of 14,896 reviews 46% were 5 star ratings with every subsequent class being around half of the previous. This imbalance was was also seen thruout various categorical features.
 
 <p align="center"><img width="400" height="350" src="/images/rd_donut.png" alt="donut_chart"></p>
 
-When looking a what the most popular word is 'helpfu' which might speak to what people are looking for in their work environment. 
+Looking at the most common words we see that ‘helpfu’ appears as the most popular word across all reviews indicating that reviews spoke a good amount about what they did and did not find helpful. 
 
 <p align="center">
     <img src="/images/word_cloud_all.png" alt="word_cloud">
-</p>
+</p> 
+
+Turning our attention to some of the other ratings provided we can see here that despite rating things like work/life balance, managements, culture, etc. one way this ratings were not highly correlated with the overall rating given.  
+
+<p align="center">
+    <img src="/images/removed_col.png" alt="removed_columns_correlation_chart">
+</p> 
 
 When looking at unique words, we can see that there is not much overlap between the reviews rated one, three, and five. This should help the models better distinguish between rating catagories.
 
 <p align="center"> <img width="250" height="400" src="/images/vennu.png" alt="venn_chart"></p>
 
-Notably there was also a distinction in word count among rating groups. It seems the worse a company the more the employee had to see about it on average.
+Additionally, when looking at average words it becomes clear that the reviews tied to lower ratings where substantially longer than the reviews with higher ratings, indicating that the worse an employees experience, the more they had to say about it.   
 
-<p align="center"><img width="400" height="250" src="/images/aw_rating.png" alt="avg_word_chart"></p> 
+<p align="center"><img width="400" height="250" src="/images/aw_rating.png" alt="avg_word_chart"></p>  
+
+## Modeling
+
+For the modeling process 5 models were tested including decision tree, random forest, xgboost, knn, and light gbm. Amount the best performing were KNN with 46% accuracy and Random Forest, and Light GBM. With with 58% accuracy. After performing a few grid searches he best overall model was xgboost with 59% accuracy across 5 classes.    
+
+  <p align="center"><img src="/images/conf_mtrx_gs.png" alt="confusion_matrices"></p>  
 
 ## Conclusion and Next Steps
 
-In the end my best model was XGBoost with 59.06% accuracy. This indicates it was able to accurately classify reviews 59% percent of the time and provides support for the idea that machine learning could be a better way to score companies versus relying on a self reported score. in future iterations of this project I hope to increase my sample of lower rated reviews and re attempt these models as well as proceed to deep learning models.
+In the end, my models show that classification are viable way to derive rating from reviews people leave rather than relying on users to choose a rating that is truly representative of how they feel about their employers. In future iterations of this project I hope to increase my sample size to better balance the classes as well as try out some deep learning models.
 
 
 ## Sources
