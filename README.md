@@ -45,7 +45,7 @@ During the preprocessing stage it became immediately clear that the data had qui
 Looking at the most common words we see that ‘helpfu’ appears as the most popular word across all reviews indicating that reviews spoke a good amount about what they did and did not find helpful. 
 
 <p align="center">
-    <img width="800" height="300" src="/images/word_cloud_all.png" alt="word_cloud">
+    <img width="800" height="250" src="/images/word_cloud_all.png" alt="word_cloud">
 </p> 
 
 Turning our attention to some of the other ratings provided we can see here that despite rating things like work/life balance, managements, culture, etc. one way this ratings were not highly correlated with the overall rating given.  
